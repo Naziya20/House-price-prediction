@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="bg3.jpg" alt="aao_khana_khao.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#agent-section">Our Agents</a></li>
+            <li class="item"><a href="#estimate-section">Estimation</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primray">welcome to Real State</h1>
+
+
+    </section>
+    <hr>
+
+
+    <hr>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services </h1>
+        <div id="services">
+            <div class="box">
+                <img src="1.jpg" alt="">
+                <h2 class="h-secondery center"> 400 sqft Bunglow($154000)</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perspiciatis placeat deserunt eveniet saepe non earum odit nostrum. unde?
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="2.jpg" alt="">
+                <h2 class="h-secondery center">540 sqft Bunglow($52800)</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perspiciatis placeat deserunt eveniet saepe non earum odit nostrum. unde?
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="3.jpg" alt="">
+                <h2 class="h-secondery center">700 sqft Bunglow($52879)</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perspiciatis placeat deserunt eveniet saepe non earum odit nostrum. unde?
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section id="agent-section">
+        <h1 class="h-primary center">Our agents</h1>
+        <div id="agents">
+            <div class="agent-item">
+                <img src="aj1.jpg" alt="Our agent">
+                <h1>amir siddiqui</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, itaque.</p>
+
+            </div>
+            <div class="agent-item">
+                <img src="aj2.jpg" alt="Our agent">
+                <h1>naziya siddiqui</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, itaque.</p>
+            </div>
+            <div class="agent-item">
+                <img src="aj3.jpg" alt="Our agent">
+                <h1>hamid siddiqui</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, itaque.</p>
+            </div>
+            <div class="agent-item">
+                <img src="aj4.jpg" alt="Our agent">
+                <h1>shaziya siddiqui</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, itaque.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="estimate-section">
+        <h1 class="h-primary center">Estimation</h1>
+
+        <div class="img"></div>
+        <form class="form">
+            <h2>Area (Square Feet)</h2>
+            <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+            <h2>BHK</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
+                <label for="radio-bhk-1">1</label>
+                <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+                <label for="radio-bhk-2">2</label>
+                <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" />
+                <label for="radio-bhk-3">3</label>
+                <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
+                <label for="radio-bhk-4">4</label>
+                <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
+                <label for="radio-bhk-5">5</label>
+            </div>
+        </form>
+        <form class="form">
+            <h2>Bath</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+                <label for="radio-bath-1">1</label>
+                <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+                <label for="radio-bath-2">2</label>
+                <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+                <label for="radio-bath-3">3</label>
+                <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+                <label for="radio-bath-4">4</label>
+                <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+                <label for="radio-bath-5">5</label>
+            </div>
+            <h2>Location</h2>
+            <div>
+                <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+            </div>
+            <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+            <div id="uiEstimatedPrice" class="result">
+                <h2></h2>
+            </div>
+
+    </section>
+
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us On</h1>
+        <div id="contact-box">
+            <h1 class="h-primary center">Naziya Siddiqui 7304638998</h1>
+            <h1 class="h-primary center">naziyasiddiqui7304@gmail.com</h1>
+
+
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
